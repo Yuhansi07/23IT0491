@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My GitHub Project</title>
+  <meta name="description" content="A simple starter page for a GitHub repo." />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; background: #0b1220; color: #e8eefc; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 48px 20px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 14px; padding: 22px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    h1 { margin: 0 0 8px; font-size: 34px; letter-spacing: 0.3px; }
+    p { line-height: 1.6; color: rgba(232,238,252,0.88); }
+    .row { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 18px; }
+    @media (min-width: 720px) { .row { grid-template-columns: 1fr 1fr; } }
+    a.btn { display: inline-block; margin-top: 14px; padding: 10px 14px; border-radius: 10px;
+            background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.18);
+            color: #e8eefc; text-decoration: none; }
+    a.btn:hover { background: rgba(255,255,255,0.22); }
+    code { background: rgba(255,255,255,0.12); padding: 2px 6px; border-radius: 6px; }
+    .small { font-size: 13px; opacity: 0.85; margin-top: 18px; }
+    .tag { display:inline-block; padding: 6px 10px; border-radius: 999px; margin: 6px 6px 0 0;
+           background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.14); }
+    ul { margin: 10px 0 0 18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>🚀 My GitHub Project</h1>
+      <p>
+        This is a simple landing page for your repository. Edit <code>index.html</code> to match your project.
+      </p>
+
+      <div class="row">
+        <div class="card" style="padding:16px;">
+          <h2 style="margin:0 0 8px; font-size:20px;">What’s inside</h2>
+          <ul>
+            <li>Clean layout (no frameworks)</li>
+            <li>Responsive design</li>
+            <li>Easy to customize</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:16px;">
+          <h2 style="margin:0 0 8px; font-size:20px;">Quick links</h2>
+          <p style="margin:0;">Add your repo link and docs link below.</p>
+          <a class="btn" href="#" id="repoLink">Repository</a>
+          <a class="btn" href="#" id="docsLink" style="margin-left:8px;">Docs</a>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">GitHub</span>
+      </div>
+
+      <p class="small">
+        Tip: If you enable GitHub Pages, this file can become your website.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Edit these links
+    const REPO_URL = "https://github.com/<username>/<repo>";
+    const DOCS_URL = "https://github.com/<username>/<repo>#readme";
+
+    document.getElementById("repoLink").href = REPO_URL;
+    document.getElementById("docsLink").href = DOCS_URL;
+  </script>
+</body>
+</html>
